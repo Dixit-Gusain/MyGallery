@@ -1,0 +1,234 @@
+*{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+.mydiv{
+ -webkit-column-count: 5;
+ -moz-column-count: 5;
+ column-count: 5;
+ padding-top: 10px;
+ padding-left: 50px;
+ padding-right: 50px;
+}
+@media (max-width:991px) {
+  .mydiv{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+.myheader{
+  font-family: cursive;
+  text-align: center;
+  font-size: bold;
+  background-color: #e7dede;
+}
+.mynavbar-navigation{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width:991px){
+  .mynavbar-navigation{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.splitMyUI{
+  width: 50%;
+}
+nav ul li{
+  list-style: none;
+}
+nav ul li a:link{
+  text-decoration: none;
+}
+nav ul li a:hover{
+  color: red;
+}
+.nav-header{
+  margin-left: 20px;
+  font-weight: bold;
+}
+@media (max-width:991px) {
+  .nav-header{
+    margin: auto;
+    font-weight: bold;
+  } 
+}
+
+.mypics{
+
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+.mypics:hover{
+  scale: 1.02;
+  transition: 1 sec;
+
+}
+.related-images{
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  justify-content:center;
+  /* text-align: center; */
+  /* padding: 5px; */
+} 
+.related-images .mypics{
+  border: 2px solid;
+  width: 198.5px;
+  padding: 2px;
+}
+@media (max-width:500px) {
+  .related-images .mypics{
+    width:110px
+  }
+}
+.related-images .mypics img{
+  height: 100%;
+  width:  100%;
+  object-fit: cover; 
+  
+}
+.name{
+  width: 100%;
+  object-fit: contain;
+  height: 60vh;
+  top: 50;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  visibility: hidden;
+  transition: opecity .4s ease, visibility .4s ease, transform .5s ease-in-out;
+  transform: scale(0);
+  overflow: hidden;
+  z-index: 999;
+  opacity: 0;
+}
+.name.open{
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+ img{
+   width: 100%;
+   box-shadow: 2px 5px 20px 0px rgb(58, 185, 51);
+}
+.name img{
+  width: auto; 
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: block;
+  line-height: 0;
+  box-sizing: border-box;
+  padding: 20px 0 20px;
+  margin: 0%;
+  box-shadow: 0px 0px 0px 0px;
+
+}
+.myicon{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 2rem;
+  height: 2rem;
+  padding: 1px;
+  /* background-color: red; */
+  color: #f31010;
+  cursor: pointer;
+}
+
+
+.side-div{
+  display: none;
+}
+.updated-side-div{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.updated-main-div{
+  padding: 1rem;
+  width: 70%;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+}
+@media (max-width:991px){
+.updated-side-div{
+  width: 100%;
+    display: flex;
+    flex-direction: column;
+  } 
+}
+@media (max-width:991px){
+  .updated-main-div{
+    display: none;
+  }
+}
+#myfooter{
+  height: 25%;
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgb(116, 119, 113);
+  text-align: center;
+  font-size: 25px;
+}
+#insta{
+  color: #f22b2b;
+  margin-right: 10px;
+}
+#insta:hover{
+  color: #f70000f6;
+  
+}
+#git{
+  color: #363232;
+  margin-right: 10px;
+}
+#git:hover{
+  color: #131111;
+  
+
+}
+#Linkdin{
+ 
+  color: rgb(32, 32, 245);
+  margin-right: 10px;
+}
+#Linkdin:hover{
+ 
+  color: rgb(0, 0, 219);
+
+}
+#mail{
+  color: #cfc8c8;
+  margin-right: 10px;
+}
+#mail:hover{
+  color: #fff6f6;
+
+}
+#twt{
+  color: rgb(97, 197, 237);
+  margin-right: 10px;
+}
+#twt:hover{
+  color: rgb(0, 169, 235);
+
+}
